@@ -1,0 +1,4 @@
+class HexPosition{
+    row: integer;
+    
+}
