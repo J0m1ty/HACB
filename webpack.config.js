@@ -1,5 +1,7 @@
 const path = require('path');
 
+const mode = "development";
+
 module.exports = [
     {
         name: 'server',
@@ -21,7 +23,8 @@ module.exports = [
             path: __dirname + '/dist/server',
             filename: 'backend.js',
         },
-        mode: "production",
+        mode: mode,
+        watch: true,
     },
     {
         name: 'client',
@@ -43,6 +46,7 @@ module.exports = [
             path: __dirname + '/dist/client',
             filename: 'bundle.js',
         },
-        mode: "production",
+        mode: mode,
+        watch: true,
     }
 ];
